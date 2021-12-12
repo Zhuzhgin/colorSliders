@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBAction func redSliderMove(_ sender: UISlider) {
         viewColor.backgroundColor = UIColor.init(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
         
-        var roundTwoNambers = round(redSlider.value * 100) / 100
+        let roundTwoNambers = round(redSlider.value * 100) / 100
         redValueLabel.text = String(roundTwoNambers)
         
         
@@ -44,13 +44,13 @@ class ViewController: UIViewController {
   
     @IBAction func grenSliderMove(_ sender: UISlider) {
         viewColor.backgroundColor = UIColor.init(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
-        var roundTwoNambers = round(greenSlider.value * 100) / 100
+        let roundTwoNambers = round(greenSlider.value * 100) / 100
         greenValuelabel.text = String(roundTwoNambers)
     }
     
     @IBAction func blueSliderMove(_ sender: UISlider) {
         viewColor.backgroundColor = UIColor.init(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
-        var roundTwoNambers = round(blueSlider.value * 100) / 100
+        let roundTwoNambers = round(blueSlider.value * 100) / 100
         blueValueLabel.text = String(roundTwoNambers)
     }
     
