@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBAction func redSliderMove(_ sender: UISlider) {
         viewColor.backgroundColor = UIColor.init(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
         
-        var roundTwoNambers = round(redSlider.value * 100) / 100
+        let roundTwoNambers = round(redSlider.value * 100) / 100
         redValueLabel.text = String(roundTwoNambers)
         
         
